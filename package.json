@@ -1,6 +1,6 @@
 {
   "name": "@splish-me/ory-sites-design-webpack-configs",
-  "version": "0.0.0",
+  "version": "0.0.0-development",
   "bugs": {
     "url":
       "https://github.com/splish-me/ory-sites-design-webpack-configs/issues"
@@ -11,22 +11,29 @@
   "main": "src/index.js",
   "repository": "splish-me/ory-sites-design-webpack-configs",
   "scripts": {
+    "commit": "git-cz",
     "format": "prettier --write \"{src/**/*,*}.{js,json}\"",
     "lint": "eslint \"{src/**/*,*}.js\"",
     "test": "jest",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "semantic-release":
+      "semantic-release pre && npm publish && semantic-release post"
   },
+  "dependencies": {},
   "devDependencies": {
     "babel-loader": "^7.1.2",
     "babel-plugin-transform-inline-environment-variables": "^0.2.0",
     "babel-preset-env": "^1.6.0",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
+    "commitizen": "^2.9.6",
     "css-loader": "^0.28.7",
+    "cz-conventional-changelog": "^2.0.0",
     "eslint": "^4.8.0",
     "eslint-config-universe": "^1.0.6",
     "jest": "^21.2.1",
     "prettier": "^1.7.4",
+    "semantic-release": "^8.0.3",
     "style-loader": "^0.19.0",
     "webpack": "^3.6.0"
   },
@@ -36,5 +43,12 @@
     "style-loader": "0.x",
     "webpack": "3.x"
   },
-  "dependencies": {}
+  "publishConfig": {
+    "access": "public"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
 }

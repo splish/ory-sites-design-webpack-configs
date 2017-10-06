@@ -1,12 +1,12 @@
 const webpack = require('webpack');
 const path = require('path');
 
-const createConfigs = require('.');
+const createConfigs = require('..');
 
 it('dummy template can be compiled without errors or warnings', done => {
   const configs = createConfigs(
-    path.join(__dirname, '__mocks__', 'index.js'),
-    path.resolve(__dirname, '..', 'tmp')
+    path.join(__dirname, '..', '__mocks__', 'index.js'),
+    path.resolve(__dirname, '..', '..', 'tmp')
   );
 
   webpack(configs, (err, stats) => {

@@ -12,11 +12,28 @@
   "repository": "splish-me/ory-sites-design-webpack-configs",
   "scripts": {
     "format": "prettier --single-quote --write \"{src/**/*,*}.{js,json}\"",
-    "lint": "eslint \"{src/**/*,*}.js\""
+    "lint": "eslint \"{src/**/*,*}.js\"",
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "devDependencies": {
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-inline-environment-variables": "^0.2.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "css-loader": "^0.28.7",
     "eslint": "^4.8.0",
     "eslint-config-universe": "^1.0.6",
-    "prettier": "^1.7.4"
+    "jest": "^21.2.1",
+    "prettier": "^1.7.4",
+    "style-loader": "^0.19.0",
+    "webpack": "^3.6.0"
+  },
+  "peerDependencies": {
+    "babel-loader": "7.x",
+    "css-loader": "0.x",
+    "style-loader": "0.x",
+    "webpack": "3.x"
   }
 }

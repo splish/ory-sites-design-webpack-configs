@@ -11,7 +11,7 @@
   "main": "src/index.js",
   "repository": "splish-me/ory-sites-design-webpack-configs",
   "scripts": {
-    "format": "prettier --single-quote --write \"{src/**/*,*}.{js,json}\"",
+    "format": "prettier --write \"{src/**/*,*}.{js,json}\"",
     "lint": "eslint \"{src/**/*,*}.js\"",
     "test": "jest",
     "test:watch": "jest --watch"

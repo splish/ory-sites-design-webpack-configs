@@ -1,5 +1,4 @@
 const path = require('path');
-const webpack = require('webpack');
 
 module.exports = (entry, outputPath = path.resolve(__dirname, 'dist')) => {
   const createConfig = (target, filename) => ({

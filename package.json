@@ -1,0 +1,22 @@
+{
+  "name": "@splish-me/ory-sites-design-webpack-configs",
+  "version": "0.0.0",
+  "bugs": {
+    "url":
+      "https://github.com/splish-me/ory-sites-design-webpack-configs/issues"
+  },
+  "author": "Splish UG (haftungsbeschränkt)",
+  "contributors": ["Jonas Keinholz <jonas@keinholz.com>"],
+  "license": "MIT",
+  "main": "src/index.js",
+  "repository": "splish-me/ory-sites-design-webpack-configs",
+  "scripts": {
+    "format": "prettier --single-quote --write \"{src/**/*,*}.{js,json}\"",
+    "lint": "eslint \"{src/**/*,*}.js\""
+  },
+  "devDependencies": {
+    "eslint": "^4.8.0",
+    "eslint-config-universe": "^1.0.6",
+    "prettier": "^1.7.4"
+  }
+}
